@@ -1,0 +1,49 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "removeComments": false,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "skipLibCheck": true,
+        "strictNullChecks": false,
+        "target": "es6",
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "module": "commonjs",
+        "lib": [
+            "esnext",
+            "esnext.asynciterable",
+            "dom",
+            "es2016"
+        ],
+        "sourceMap": true,
+        "outDir": "./dist",
+        "noEmit": true,
+        "incremental": true,
+        "strict": true,
+        "esModuleInterop": true, //允许从没有设置默认导出的模块中默认导入。这并不影响代码的输出，仅为了类型检查
+        "forceConsistentCasingInFileNames": true,
+        "typeRoots": [
+            "./node_modules/@types",
+            "types"
+        ],
+        "baseUrl": ".",
+        "types": [
+            "jest",
+            "mocha",
+            "jquery"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ],
+    "include": [
+        "packages/**/src/**/*",
+        "packages/libs/**/*"
+    ]
+}

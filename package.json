@@ -1,0 +1,27 @@
+{
+    "private": true,
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "commit": "git add . && git-cz && git push --follow-tags"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "cz-conventional-changelog": "^3.3.0",
+        "typescript": "^5.5.4"
+    },
+    "workspaces": {
+        "packages": [
+            "packages/*"
+        ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog",
+            "defaultScope": "全局"
+        }
+    }
+}

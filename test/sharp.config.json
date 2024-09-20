@@ -1,0 +1,12 @@
+{
+    "jpeg": {
+        "quality": 80
+    },
+    "webp": {
+        "nearLossless": true
+    },
+    "png": {
+        "quality": 80,
+        "palette": false
+    }
+}
